@@ -17,7 +17,7 @@ def convert_dds_files():
     root.withdraw()
     
     file_paths = filedialog.askopenfilenames(
-        title="選取DDS檔案",
+        title="Select DDS files to convert",
         filetypes=[("DDS Files","*.dds")]
     )
 
