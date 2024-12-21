@@ -10,7 +10,7 @@ Before using this tool, you need to install the necessary Python libraries. Run 
 pip install wand
 ```
 
-Additionally, you need to download and install ImageMagick from the [official website](https://imagemagick.org/script/download.php). Make sure to select the "Install legacy utilities (e.g. convert)" option during installation.
+You also need to ensure that the C++ header files are set up correctly. This can be done by selecting the "Install development headers for C and C++" option during the ImageMagick installation and installing the necessary development tools and libraries for your operating system.
 
 ## Usage
 
@@ -38,7 +38,7 @@ def convert_dds_file(path):
 def convert_dds_files():
     root = tk.Tk()
     root.withdraw()
-    
+
     file_paths = filedialog.askopenfilenames(
         title="Select DDS files to convert",
         filetypes=[("DDS Files", "*.dds")]
